@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "babel-node sagas.spec.js | tap-spec",
-    "start": "budo main.js:build.js --dir ./ --verbose  --live -- -t babelify"
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
     "babel-polyfill": "6.3.14",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-redux": "^6.0.0",
     "redux": "^3.3.1",
     "redux-saga": "^0.15.0"
   },
@@ -29,6 +30,7 @@
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
     "budo": "^8.0.4",
+    "react-scripts": "^2.1.5",
     "tap-spec": "^4.1.1",
     "tape": "^4.2.2"
   }
